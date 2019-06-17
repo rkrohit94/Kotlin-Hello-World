@@ -56,6 +56,7 @@ jar {
 
 repositories {
     mavenCentral()
+    jcenter()
     mavenLocal()
 }
 dependencies {
@@ -64,6 +65,7 @@ dependencies {
 
     testImplementation('org.junit.jupiter:junit-jupiter-engine:5.4.2')
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.3.2")
+    compile group: 'com.github.kittinunf.fuel', name: 'fuel', version: '1.12.1'
     testImplementation("io.mockk:mockk:1.9.3")
 }
 
